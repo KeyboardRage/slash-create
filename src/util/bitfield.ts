@@ -48,7 +48,7 @@ export class BitField {
     // @ts-ignore
     bit = this.constructor.resolve(bit, this.isBigInt);
     // @ts-ignore
-    return (this.bitfield & bit) === bit;
+    return !!(this.bitfield & bit);
   }
 
   /**
